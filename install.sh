@@ -4,3 +4,10 @@ ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.config/zsh/aliases.zsh ~/.config/zsh/aliases.zsh
 ln -sf ~/dotfiles/.config/zsh/exports.zsh ~/.config/zsh/exports.zsh
 ln -sf ~/dotfiles§/.config/zsh/functions.zsh ~/.config/zsh/functions.zsh
+
+# hypr
+mkdir -p ~/.config/hypr
+ln -sf ~/dotfiles/.config/hypr/hypridle.conf ~/.config/hypr/hypridle.conf
+ln -sf ~/dotfiles/.config/hypr/hyprland.conf ~/.config/hypr/hyprland.conf
+ln -sf ~/dotfiles/.config/hypr/hyprlock.conf ~/.config/hypr/hyprlock.conf
+ln -sf ~/dotfiles/.config/hypr/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
