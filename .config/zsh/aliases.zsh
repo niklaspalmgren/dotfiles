@@ -4,6 +4,9 @@ alias ga='git add'
 alias gaa='git add --all'
 alias gc='git commit'
 
-#Shortcuts
+# Shortcuts
 alias ll='ls -la'
 alias ..='cd ..'
+
+# Editor
+alias vim='nvim'
