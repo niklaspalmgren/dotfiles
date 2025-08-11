@@ -11,3 +11,8 @@ ln -sf ~/dotfiles/.config/hypr/hypridle.conf ~/.config/hypr/hypridle.conf
 ln -sf ~/dotfiles/.config/hypr/hyprland.conf ~/.config/hypr/hyprland.conf
 ln -sf ~/dotfiles/.config/hypr/hyprlock.conf ~/.config/hypr/hyprlock.conf
 ln -sf ~/dotfiles/.config/hypr/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
+
+# waybar
+mkdir -p ~/.config/waybar
+ln -sf ~/dotfiles/.config/waybar/config.jsonc ~/.config/waybar/config.jsonc
+ln -sf ~/dotfiles/.config/waybar/style.css ~/.config/waybar/style.css

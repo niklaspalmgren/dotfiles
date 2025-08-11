@@ -1,0 +1,143 @@
+@import "../../.cache/wal/colors-waybar.css";
+
+* {
+    font-family: "FiraCode Nerd Font", "Font Awesome 6 Free", "Font Awesome 6 Free Solid";
+    font-size: 14px;
+    color: @foreground;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+.modules-left, .modules-center, .modules-right
+{
+    background-color: alpha(@background, 0.8);
+    border-radius: 10px;
+}
+
+.modules-left
+{
+    padding: 0px 8px 0px 0px;
+}
+
+.modules-right {
+    padding: 0px 0px 0px 8px;
+}
+
+.modules-center
+{
+    padding: 0px 6px;
+    margin: 0px 12px;
+}
+
+
+#clock,
+#battery,
+#power-profiles-daemon,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#mpd {
+  padding: 0px 6px;
+}
+
+#workspaces {
+    border-radius: 10px 0 0 10px;
+    border-width: 0 0 1px 0;
+    border: @color11;
+}
+#workspaces button {
+    padding: 0px 2px;
+    background-color: transparent;
+    color: @foreground;
+    transition: all 0.3s ease;
+}
+
+#workspaces button:hover {
+    background-color: #3c3836;
+}
+
+#workspaces button.active {
+    background-color: @color1;
+}
+
+#workspaces button.urgent {
+    background-color: #cc241d;
+}
+
+#battery.good {
+    color: #ffffff;
+    background-color: #5a8a52;
+}
+
+#battery.warning {
+    background-color: #b8a557;
+}
+
+#battery
+{
+    padding: 0px 16px 0px 8px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#battery.critical {
+    background-color: #a85965;
+    animation: blink 0.5s linear infinite alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #8a4750;
+    }
+}
+
+#battery.charging, #battery.plugged {
+    background-color: #5a8a52;
+}
+
+#network.disconnected {
+    background-color: #cc241d;
+    color: #ebdbb2;
+}
+
+
+#pulseaudio.muted {
+    color: #ebdbb2;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #eb4d4b;
+}
+
+tooltip {
+    background-color: alpha(@background, 0.7);
+    border: 1px solid @color11;
+    border-radius: 10px;
+    color: @foreground;
+}
+
+tooltip label {
+    color: @foreground;
+}
