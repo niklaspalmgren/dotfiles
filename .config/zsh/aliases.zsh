@@ -11,3 +11,9 @@ alias ..='cd ..'
 
 # Editor
 alias vim='nvim'
+
+# kubectl
+alias kgp='kubectl get pods'
+alias kgj='kubectl get jobs'
+alias kgcj='kubectl get cronjobs'
+alias kl='kubectl logs'
