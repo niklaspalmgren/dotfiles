@@ -15,10 +15,10 @@
     	"clock"
     ],
     "modules-right": [
+        "custom/nextevent",
         "pulseaudio",
         "bluetooth",
         "network",
-        "backlight",
         "power-profiles-daemon",
         "battery"
     ],
@@ -99,6 +99,7 @@
     },
     "battery": {
         "states": {
+            "full": 100,
             "good": 80,
             "warning": 30,
             "critical": 15
@@ -184,6 +185,13 @@
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+    "custom/nextevent": {
+        "exec": "~/.scripts/waybar_next_event.sh",
+        "interval": 300,
+        "return-type": "text",
+        "tooltip": false,
+        "max-length": 50,
     },
     "custom/power": {
         "format" : "⏻ ",
