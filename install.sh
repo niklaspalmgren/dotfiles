@@ -16,3 +16,7 @@ ln -sf ~/dotfiles/.config/hypr/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
 mkdir -p ~/.config/waybar
 ln -sf ~/dotfiles/.config/waybar/config.jsonc ~/.config/waybar/config.jsonc
 ln -sf ~/dotfiles/.config/waybar/style.css ~/.config/waybar/style.css
+
+# kanshi
+mkdir -p ~/.config/kanshi
+ln -sf ~/dotfiles/.config/kanshi/config ~/.config/kanshi/config
