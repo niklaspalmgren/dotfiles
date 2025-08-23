@@ -41,6 +41,7 @@ window#waybar.hidden {
 #custom-nextevent,
 #clock,
 #battery,
+#bluetooth,
 #power-profiles-daemon,
 #cpu,
 #memory,
@@ -84,6 +85,10 @@ window#waybar.hidden {
 
 #workspaces button.urgent {
     background-color: #cc241d;
+}
+
+#bluetooth.off {
+    color: #b8a557;
 }
 
 #battery.full, #battery.good {
