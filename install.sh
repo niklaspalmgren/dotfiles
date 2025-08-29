@@ -20,3 +20,7 @@ ln -sf ~/dotfiles/.config/waybar/style.css ~/.config/waybar/style.css
 # kanshi
 mkdir -p ~/.config/kanshi
 ln -sf ~/dotfiles/.config/kanshi/config ~/.config/kanshi/config
+
+# whipper 
+mkdir -p ~/.config/whipper
+ln -sf ~/dotfiles/.config/whipper/whipper.conf ~/.config/whipper/whipper.conf
