@@ -1,26 +1,36 @@
+#!/bin/bash
+set -euo pipefail
+
+DOTFILES_DIR="${DOTFILES_DIR:-$HOME/dotfiles}"
+CONFIG_DIR="$HOME/.config"
+
 # ZSH
-mkdir -p ~/.config/zsh
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
-ln -sf ~/dotfiles/.config/zsh/aliases.zsh ~/.config/zsh/aliases.zsh
-ln -sf ~/dotfiles/.config/zsh/exports.zsh ~/.config/zsh/exports.zsh
-ln -sf ~/dotfiles/.config/zsh/functions.zsh ~/.config/zsh/functions.zsh
+mkdir -p "$CONFIG_DIR/zsh"
+ln -sf "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
+ln -sf "$DOTFILES_DIR/.config/zsh/aliases.zsh" "$CONFIG_DIR/zsh/aliases.zsh"
+ln -sf "$DOTFILES_DIR/.config/zsh/exports.zsh" "$CONFIG_DIR/zsh/exports.zsh"
+ln -sf "$DOTFILES_DIR/.config/zsh/functions.zsh" "$CONFIG_DIR/zsh/functions.zsh"
 
 # hypr
-mkdir -p ~/.config/hypr
-ln -sf ~/dotfiles/.config/hypr/hypridle.conf ~/.config/hypr/hypridle.conf
-ln -sf ~/dotfiles/.config/hypr/hyprland.conf ~/.config/hypr/hyprland.conf
-ln -sf ~/dotfiles/.config/hypr/hyprlock.conf ~/.config/hypr/hyprlock.conf
-ln -sf ~/dotfiles/.config/hypr/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
+mkdir -p "$CONFIG_DIR/hypr"
+ln -sf "$DOTFILES_DIR/.config/hypr/hypridle.conf" "$CONFIG_DIR/hypr/hypridle.conf"
+ln -sf "$DOTFILES_DIR/.config/hypr/hyprland.conf" "$CONFIG_DIR/hypr/hyprland.conf"
+ln -sf "$DOTFILES_DIR/.config/hypr/hyprlock.conf" "$CONFIG_DIR/hypr/hyprlock.conf"
+ln -sf "$DOTFILES_DIR/.config/hypr/hyprpaper.conf" "$CONFIG_DIR/hypr/hyprpaper.conf"
 
 # waybar
-mkdir -p ~/.config/waybar
-ln -sf ~/dotfiles/.config/waybar/config.jsonc ~/.config/waybar/config.jsonc
-ln -sf ~/dotfiles/.config/waybar/style.css ~/.config/waybar/style.css
+mkdir -p "$CONFIG_DIR/waybar"
+ln -sf "$DOTFILES_DIR/.config/waybar/config.jsonc" "$CONFIG_DIR/waybar/config.jsonc"
+ln -sf "$DOTFILES_DIR/.config/waybar/style.css" "$CONFIG_DIR/waybar/style.css"
 
 # kanshi
-mkdir -p ~/.config/kanshi
-ln -sf ~/dotfiles/.config/kanshi/config ~/.config/kanshi/config
+mkdir -p "$CONFIG_DIR/kanshi"
+ln -sf "$DOTFILES_DIR/.config/kanshi/config" "$CONFIG_DIR/kanshi/config"
 
-# whipper 
-mkdir -p ~/.config/whipper
-ln -sf ~/dotfiles/.config/whipper/whipper.conf ~/.config/whipper/whipper.conf
+# whipper
+mkdir -p "$CONFIG_DIR/whipper"
+ln -sf "$DOTFILES_DIR/.config/whipper/whipper.conf" "$CONFIG_DIR/whipper/whipper.conf"
+
+# qutebrowser
+mkdir -p "$CONFIG_DIR/qutebrowser"
+ln -sf "$DOTFILES_DIR/.config/qutebrowser/config.py" "$CONFIG_DIR/qutebrowser/config.py"
