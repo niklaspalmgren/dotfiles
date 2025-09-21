@@ -21,7 +21,7 @@ source ~/.config/zsh/zoxide.zsh
 source ~/.config/zsh/hsb.zsh
 
 # Base16 theme
-source ~/.config/themes/generated/zsh/gruvbox-dark-hard.zsh
+source ~/.config/themes/generated/zsh/gruvbox-material-dark-hard.zsh
 
 # Prompt
 eval "$(starship init zsh)"

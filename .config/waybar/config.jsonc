@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 24,
+    "height": 30,
     "spacing": 12,
     "margin-top": 12,
     "margin-left": 12,
@@ -12,15 +12,16 @@
         "hyprland/window",
     ],
     "modules-center": [
-    	"clock"
     ],
     "modules-right": [
         "custom/nextevent",
         "pulseaudio",
         "bluetooth",
+        "custom/vpn",
         "network",
         "power-profiles-daemon",
-        "battery"
+        "battery",
+    	"clock"
     ],
     "keyboard-state": {
         "numlock": true,
@@ -75,7 +76,7 @@
     "clock": {
         "interval": 1,
         "tooltip-format": "{:%A | %Y-%m-%d | %H:%M:%S}\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%d %b %H:%M}"
+        "format": "{:%d %b · %H:%M}"
     },
     "cpu": {
         "format": " {usage}%",
@@ -209,5 +210,11 @@
 			"suspend": "systemctl suspend",
 			"hibernate": "systemctl hibernate"
 		}
+    },
+    "custom/vpn": {
+        "exec": "~/.config/waybar/wireguard-status.sh",
+        "return-type": "json",
+        "interval": 5,
+        "format": "{}"
     }
 }

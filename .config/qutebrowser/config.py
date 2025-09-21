@@ -79,6 +79,9 @@ config.load_autoconfig(True)
 ##   - never: Never show changelog after upgrades.
 # c.changelog_after_upgrade = 'minor'
 
+## Import theme colors
+exec(open('/home/np/.config/themes/generated/qutebrowser/gruvbox-material-dark-hard.py').read())
+
 ## Background color of the completion widget category headers.
 ## Type: QssColor
 # c.colors.completion.category.bg = 'qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #888888, stop:1 #505050)'
@@ -331,7 +334,7 @@ config.load_autoconfig(True)
 
 ## Background color of the statusbar in insert mode.
 ## Type: QssColor
-c.colors.statusbar.insert.bg = 'darkgreen'
+#c.colors.statusbar.insert.bg = 'darkgreen'
 
 ## Foreground color of the statusbar in insert mode.
 ## Type: QssColor
@@ -393,15 +396,15 @@ c.colors.statusbar.insert.bg = 'darkgreen'
 
 ## Background color of the tab bar.
 ## Type: QssColor
-c.colors.tabs.bar.bg = 'transparent'
+#c.colors.tabs.bar.bg = 'transparent'
 
 ## Background color of unselected even tabs.
 ## Type: QtColor
-c.colors.tabs.even.bg = 'transparent'
+#c.colors.tabs.even.bg = 'transparent'
 
 ## Foreground color of unselected even tabs.
 ## Type: QtColor
-c.colors.tabs.even.fg = 'transparent'
+#c.colors.tabs.even.fg = 'transparent'
 
 ## Color for the tab indicator on errors.
 ## Type: QtColor
@@ -409,7 +412,7 @@ c.colors.tabs.even.fg = 'transparent'
 
 ## Color gradient start for the tab indicator.
 ## Type: QtColor
-c.colors.tabs.indicator.start = 'transparent'
+#c.colors.tabs.indicator.start = 'transparent'
 
 ## Color gradient end for the tab indicator.
 ## Type: QtColor
@@ -466,15 +469,15 @@ c.colors.tabs.indicator.start = 'transparent'
 
 ## Background color of selected even tabs.
 ## Type: QtColor
-c.colors.tabs.selected.even.bg = '#1a1a1a1a'
+#c.colors.tabs.selected.even.bg = '#1a1a1a1a'
 
 ## Foreground color of selected even tabs.
 ## Type: QtColor
-c.colors.tabs.selected.even.fg = '#fafafa'
+#c.colors.tabs.selected.even.fg = '#fafafa'
 
 ## Background color of selected odd tabs.
 ## Type: QtColor
-c.colors.tabs.selected.odd.bg = '#1a1a1a1a'
+#c.colors.tabs.selected.odd.bg = '#1a1a1a1a'
 
 ## Foreground color of selected odd tabs.
 ## Type: QtColor
@@ -491,7 +494,7 @@ c.colors.tabs.selected.odd.bg = '#1a1a1a1a'
 ## Background color for webpages if unset (or empty to use the theme's
 ## color).
 ## Type: QtColor
-c.colors.webpage.bg = 'white'
+#c.colors.webpage.bg = 'white'
 
 ## Which algorithm to use for modifying how colors are rendered with dark
 ## mode. The `lightness-cielab` value was added with QtWebEngine 5.14 and

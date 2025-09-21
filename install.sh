@@ -22,6 +22,7 @@ ln -sf "$DOTFILES_DIR/.config/hypr/hyprpaper.conf" "$CONFIG_DIR/hypr/hyprpaper.c
 mkdir -p "$CONFIG_DIR/waybar"
 ln -sf "$DOTFILES_DIR/.config/waybar/config.jsonc" "$CONFIG_DIR/waybar/config.jsonc"
 ln -sf "$DOTFILES_DIR/.config/waybar/style.css" "$CONFIG_DIR/waybar/style.css"
+ln -sf "$DOTFILES_DIR/.config/waybar/wireguard-status.sh" "$CONFIG_DIR/waybar/wireguard-status.sh"
 
 # kanshi
 mkdir -p "$CONFIG_DIR/kanshi"
