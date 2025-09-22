@@ -24,6 +24,7 @@ ln -sf "$DOTFILES_DIR/.config/waybar/config.jsonc" "$CONFIG_DIR/waybar/config.js
 ln -sf "$DOTFILES_DIR/.config/waybar/style.css" "$CONFIG_DIR/waybar/style.css"
 ln -sf "$DOTFILES_DIR/.config/waybar/wireguard-status.sh" "$CONFIG_DIR/waybar/wireguard-status.sh"
 ln -sf "$DOTFILES_DIR/.config/waybar/wireguard-toggle.sh" "$CONFIG_DIR/waybar/wireguard-toggle.sh"
+ln -sf "$DOTFILES_DIR/.config/waybar/gcal-agenda.sh" "$CONFIG_DIR/waybar/gcal-agenda.sh"
 
 # kanshi
 mkdir -p "$CONFIG_DIR/kanshi"

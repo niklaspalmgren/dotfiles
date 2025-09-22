@@ -10,7 +10,7 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
-#custom-nextevent,
+#custom-agenda,
 #custom-vpn,
 #clock,
 #battery,
@@ -30,6 +30,10 @@ window#waybar.hidden {
 #scratchpad,
 #mpd {
   padding: 0px 6px;
+}
+
+#custom-agenda.no-events {
+    color: @base03;
 }
 
 #custom-vpn.connected {
