@@ -5,7 +5,7 @@ DOTFILES_DIR="${DOTFILES_DIR:-$HOME/dotfiles}"
 CONFIG_DIR="$HOME/.config"
 
 # XDG
-ln -sf "$DOTFILES_DIR/mimeapps.list" "$CONFIG_DIR/mimeapps.list"
+ln -sf "$DOTFILES_DIR/.config/mimeapps.list" "$CONFIG_DIR/mimeapps.list"
 
 # ZSH
 mkdir -p "$CONFIG_DIR/zsh"
