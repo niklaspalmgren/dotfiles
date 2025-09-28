@@ -1,0 +1,47 @@
+# Base16 Gruvbox Material Dark Hard - Zathura colors
+# Author: //github.com/sainnhe/gruvbox-material)
+
+# Background and foreground
+set default-bg "#1d2021"
+set default-fg "#ddc7a1"
+
+# Statusbar
+set statusbar-bg "#2a2827"
+set statusbar-fg "#665c54"
+
+# Inputbar
+set inputbar-bg "#3c3836"
+set inputbar-fg "#ebdbb2"
+
+# Notifications
+set notification-bg "#2a2827"
+set notification-fg "#665c54"
+set notification-error-bg "#ea6962"
+set notification-error-fg "#1d2021"
+set notification-warning-bg "#d8a657"
+set notification-warning-fg "#1d2021"
+
+# Highlights
+set highlight-color "#d8a657"
+set highlight-active-color "#7daea3"
+
+# Completion
+set completion-bg "#2a2827"
+set completion-fg "#665c54"
+set completion-highlight-bg "#3c3836"
+set completion-highlight-fg "#ebdbb2"
+set completion-group-bg "#2a2827"
+set completion-group-fg "#504945"
+
+# Recolor mode colors
+set recolor-lightcolor "#1d2021"
+set recolor-darkcolor "#ddc7a1"
+
+# Enable recolor by default
+set recolor false
+set recolor-keephue false
+
+# Other settings
+set selection-clipboard clipboard
+set window-title-basename true
+set statusbar-basename true

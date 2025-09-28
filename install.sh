@@ -40,3 +40,7 @@ ln -sf "$DOTFILES_DIR/.config/whipper/whipper.conf" "$CONFIG_DIR/whipper/whipper
 # qutebrowser
 mkdir -p "$CONFIG_DIR/qutebrowser"
 ln -sf "$DOTFILES_DIR/.config/qutebrowser/config.py" "$CONFIG_DIR/qutebrowser/config.py"
+
+# zathura
+mkdir -p "$CONFIG_DIR/zathura"
+ln -sf "$DOTFILES_DIR/.config/zathura/zathurarc" "$CONFIG_DIR/zathura/zathurarc"
