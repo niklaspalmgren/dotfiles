@@ -4,6 +4,9 @@ set -euo pipefail
 DOTFILES_DIR="${DOTFILES_DIR:-$HOME/dotfiles}"
 CONFIG_DIR="$HOME/.config"
 
+# XDG
+ln -sf "$DOTFILES_DIR/mimeapps.list" "$CONFIG_DIR/mimeapps.list"
+
 # ZSH
 mkdir -p "$CONFIG_DIR/zsh"
 ln -sf "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
