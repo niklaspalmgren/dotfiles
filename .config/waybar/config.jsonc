@@ -17,6 +17,8 @@
         "custom/agenda",
         "pulseaudio",
         "bluetooth",
+        "custom/mako",
+        "custom/ufw",
         "custom/vpn",
         "network",
         "power-profiles-daemon",
@@ -154,9 +156,23 @@
     },
     "custom/vpn": {
         "exec": "~/.config/waybar/wireguard-status.sh",
-        "on-click": "~/.config/waybar/wireguard-toggle.sh proton-FR",
         "return-type": "json",
-        "interval": 5,
-        "format": "{}"
+        "format": "{}",
+        "signal": 7,
+        "interval": 60 // backup sync status every min
+    },
+    "custom/ufw": {
+        "exec": "~/.config/waybar/ufw-status.sh",
+        "return-type": "json",
+        "format": "{}",
+        "interval": 60
+    },
+    "custom/mako": {
+        "exec": "$HOME/.config/waybar/mako-mode.sh",
+        "on-click": "$HOME/.scripts/mako_toggle_do_not_disturb.sh",
+        "return-type": "json",
+        "format": "{}",
+        "signal": 8,
+        "interval": 60 // backup sync status every min
     }
 }

@@ -5,13 +5,62 @@
     font-size: 14px;
 }
 
+window#waybar {
+  color: @base05;
+  background: transparent;
+}
 
 window#waybar.hidden {
     opacity: 0.2;
 }
 
+.modules-left {
+    background-color: alpha(@base00, 0.85);
+    border-radius: 15px;
+    padding: 0px 8px; 
+}
+
+.modules-right {
+    background-color: alpha(@base00, 0.85);
+    border-radius: 15px;
+    padding: 0px 8px;
+}
+
+#workspaces button {
+  color: @base05;
+  margin: 2px;
+  padding: 0 4px;
+  border: none;
+}
+
+#workspaces button.active {
+  color: @base0F;
+}
+
+#workspaces button:hover {
+  color: @base06;
+  background: transparent;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+tooltip {
+    background-color: alpha(@base00, 0.85);
+    color: @base05;
+    border: 0px solid @base03;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+tooltip label {
+    color: @base05;
+}
+
+
 #custom-agenda,
 #custom-vpn,
+#custom-ufw,
+#custom-mako,
 #clock,
 #battery,
 #bluetooth,
@@ -32,7 +81,23 @@ window#waybar.hidden {
   padding: 0px 6px;
 }
 
+#battery {
+  color: @base0B;
+}
+
+#battery.warning {
+  color: @base0A;
+}
+
+#battery.critical {
+  color: @base08;
+}
+
 #custom-agenda.no-events {
+    color: @base03;
+}
+
+#custom-ufw.inactive {
     color: @base03;
 }
 
@@ -44,8 +109,24 @@ window#waybar.hidden {
     color: @base03;
 }
 
+#custom-mako.do-not-disturb {
+    color: @base08;
+}
+
 #workspaces button {
     transition: all 0.3s ease;
+}
+
+#network.disconnected {
+  color: @base08;
+}
+
+#pulseaudio.muted {
+  color: @base03;
+}
+
+#bluetooth.off {
+  color: @base03;
 }
 
 @keyframes blink {
