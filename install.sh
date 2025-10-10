@@ -34,6 +34,10 @@ ln -sf "$DOTFILES_DIR/.config/waybar/gcal-agenda.sh" "$CONFIG_DIR/waybar/gcal-ag
 mkdir -p "$CONFIG_DIR/kanshi"
 ln -sf "$DOTFILES_DIR/.config/kanshi/config" "$CONFIG_DIR/kanshi/config"
 
+# kitty
+mkdir -p "$CONFIG_DIR/kitty"
+ln -sf "$DOTFILES_DIR/.config/kitty/kitty.conf" "$CONFIG_DIR/kitty/kitty.conf"
+
 # whipper
 mkdir -p "$CONFIG_DIR/whipper"
 ln -sf "$DOTFILES_DIR/.config/whipper/whipper.conf" "$CONFIG_DIR/whipper/whipper.conf"
