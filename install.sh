@@ -6,6 +6,7 @@ CONFIG_DIR="$HOME/.config"
 
 # XDG
 ln -sf "$DOTFILES_DIR/.config/mimeapps.list" "$CONFIG_DIR/mimeapps.list"
+ln -sf "$DOTFILES_DIR/.config/user-dirs.dirs" "$CONFIG_DIR/user-dirs.dirs"
 
 # ZSH
 mkdir -p "$CONFIG_DIR/zsh"
