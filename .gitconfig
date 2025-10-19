@@ -1,0 +1,12 @@
+[user]
+	name = "Niklas Palmgren"
+	email = "dev@palmgren.xyz"
+
+[push]
+	autoSetupRemote = true
+
+[credential]
+    helper = store
+
+[includeIf "gitdir:~/repositories/hsb/"]
+    path = ~/.gitconfig-hsb

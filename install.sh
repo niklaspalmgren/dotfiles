@@ -8,6 +8,10 @@ CONFIG_DIR="$HOME/.config"
 ln -sf "$DOTFILES_DIR/.config/mimeapps.list" "$CONFIG_DIR/mimeapps.list"
 ln -sf "$DOTFILES_DIR/.config/user-dirs.dirs" "$CONFIG_DIR/user-dirs.dirs"
 
+# git
+ln -sf "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
+ln -sf "$DOTFILES_DIR/.gitconfig-hsb" "$HOME/.gitconfig-hsb"
+
 # ZSH
 mkdir -p "$CONFIG_DIR/zsh"
 ln -sf "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
