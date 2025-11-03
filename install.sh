@@ -19,6 +19,9 @@ ln -sf "$DOTFILES_DIR/.config/zsh/aliases.zsh" "$CONFIG_DIR/zsh/aliases.zsh"
 ln -sf "$DOTFILES_DIR/.config/zsh/exports.zsh" "$CONFIG_DIR/zsh/exports.zsh"
 ln -sf "$DOTFILES_DIR/.config/zsh/functions.zsh" "$CONFIG_DIR/zsh/functions.zsh"
 
+# Starship
+ln -sf "$DOTFILES_DIR/.config/starship.toml" "$CONFIG_DIR/starship.toml"
+
 # hypr
 mkdir -p "$CONFIG_DIR/hypr"
 ln -sf "$DOTFILES_DIR/.config/hypr/hypridle.conf" "$CONFIG_DIR/hypr/hypridle.conf"
