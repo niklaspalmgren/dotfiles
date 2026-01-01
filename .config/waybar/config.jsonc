@@ -130,7 +130,7 @@
         ],
         "ethernet": "󰈁",        // Fast ethernet-ikon
         "disconnected": "󰤮"     // Frånkopplad-ikon
-    },
+      }
     },
     "pulseaudio": {
         "format": "{icon} {volume}% {format_source}",
@@ -151,31 +151,23 @@
         "on-click": "pavucontrol"
     },
     "custom/agenda": {
-        "exec": "~/.config/waybar/gcal-agenda.sh",
+        "exec": "$HOME/.config/waybar/gcal-agenda.sh",
         "interval": 300,
         "return-type": "json",
         "max-length": 50
     },
     "custom/vpn": {
-        "exec": "~/.config/waybar/wireguard-status.sh",
+        "exec": "$HOME/.config/waybar/wireguard-status.sh",
         "return-type": "json",
         "format": "{}",
         "signal": 7,
         "interval": 60 // backup sync status every min
     },
     "custom/ufw": {
-        "exec": "~/.config/waybar/ufw-status.sh",
+        "exec": "$HOME/.config/waybar/ufw-status.sh",
         "return-type": "json",
         "format": "{}",
         "interval": 60
-    },
-    "custom/mako": {
-        "exec": "$HOME/.config/waybar/mako-mode.sh",
-        "on-click": "$HOME/.scripts/mako_toggle_do_not_disturb.sh",
-        "return-type": "json",
-        "format": "{}",
-        "signal": 8,
-        "interval": 60 // backup sync status every min
     },
     "custom/whisper": {
         "exec": "whisper-waybar",
