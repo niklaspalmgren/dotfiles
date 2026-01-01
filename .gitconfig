@@ -10,3 +10,5 @@
 
 [includeIf "gitdir:~/repositories/hsb/"]
     path = ~/.gitconfig-hsb
+[init]
+	defaultBranch = main
