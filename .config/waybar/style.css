@@ -55,11 +55,13 @@ tooltip label {
     color: @base05;
 }
 
-
+#custom-weather,
 #custom-agenda,
 #custom-vpn,
 #custom-ufw,
 #custom-mako,
+#custom-whisper,
+#custom-fullscreen,
 #clock,
 #battery,
 #bluetooth,
@@ -108,8 +110,9 @@ tooltip label {
     color: @base03;
 }
 
-#custom-mako.do-not-disturb {
-    color: @base08;
+#custom-fullscreen.fullscreen {
+    color: @base09;
+    padding: 0px 0px 0px 4px;
 }
 
 #workspaces button {
