@@ -182,6 +182,7 @@
     },
 	"custom/weather": {
 	    "exec": "$HOME/.config/waybar/weather-status.sh",
+		"return-type": "json",
 		"format": "{}",
 		"interval": 60
 	}
